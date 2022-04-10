@@ -97,7 +97,7 @@ def get_scheduled_assignments(scheduled_tasks, assignment_id, assignment_title, 
     for x in range(0, num_tasks):
         for i, j in enumerate(results):
             for k, l in enumerate(j):
-                if l == x:
+                if l == x+1:
                     scheduled_assignments.append({'id': assignment_id[x],
                                                   'title': assignment_title[x],
                                                   'start_time': time_slots[i],
